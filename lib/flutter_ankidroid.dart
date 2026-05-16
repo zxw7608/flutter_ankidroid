@@ -90,10 +90,10 @@ class Ankidroid {
   Future<Result<String>> addMedia(Uint8List bytes, String preferredName, String mimeType) async {
     final rPort = ReceivePort();
     _ankiPort.send({
-      'functionName': 'addNotes', 
-      'sendPort': rPort.sendPort, 
+      'functionName': 'addMedia',
+      'sendPort': rPort.sendPort,
       'bytes': bytes,
-      'preferredName': preferredName, 
+      'preferredName': preferredName,
       'mimeType': mimeType, 
     });
     
