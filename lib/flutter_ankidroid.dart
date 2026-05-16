@@ -9,6 +9,7 @@ import 'package:request_permission/request_permission.dart';
 import 'util/future_result.dart';
 export 'util/note_info.dart' show NoteInfo;
 
+@pragma('vm:entry-point')
 class Ankidroid {
   final FlutterIsolate _isolate;
   final SendPort _ankiPort;
